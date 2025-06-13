@@ -49,6 +49,17 @@
 
 	<build>
 		<plugins>
+			<!-- Compiler Plugin for Java 21 -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.11.0</version> <!-- or 3.13.0 -->
+				<configuration>
+					<release>21</release>
+				</configuration>
+			</plugin>
+	
+			<!-- Spring Boot Plugin -->
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
